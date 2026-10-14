@@ -1,0 +1,22 @@
+{
+  "name": "saqtau-ai",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "front-end",
+    "backend"
+  ],
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n WEB,API \"npm run dev -w front-end\" \"npm run dev -w backend\"",
+    "build": "npm run build -w front-end",
+    "start": "concurrently -k -n WEB,API \"npm run start -w front-end\" \"npm run start -w backend\"",
+    "lint": "npm run lint -w front-end",
+    "test": "npm run test -w backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
