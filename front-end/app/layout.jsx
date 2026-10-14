@@ -1,7 +1,7 @@
 import "./globals.css";
 import "./style/motion.css";
 export const metadata = {
-  title: "SaqtauAI — Ближе к себе. Ближе к здоровью.",
+  title: "SaqtauAI",
   description:
     "SaqtauAI — HealthTech из Астаны. Наблюдение за самочувствием с помощью камеры смартфона. Узнайте о технологии rPPG и запросите демо.",
   metadataBase: new URL("https://saqtauai.com"),

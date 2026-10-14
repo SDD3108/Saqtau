@@ -55,7 +55,7 @@ function Content() {
       try {
         localStorage.setItem(languageStorageKey, language);
       } catch {
-        // Сайт продолжает работать, если браузер запрещает localStorage.
+        console.log("error");
       }
     }
 
@@ -64,7 +64,8 @@ function Content() {
     try {
       savedLanguage = localStorage.getItem(languageStorageKey);
     } catch {
-      // Используем текущий язык, если хранилище недоступно.
+      console.log("error");
+      
     }
 
     i18n.on("languageChanged", persistLanguage);

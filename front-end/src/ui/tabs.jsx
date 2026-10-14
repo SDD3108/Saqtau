@@ -2,7 +2,6 @@
 import * as React from "react";
 import { cva } from "class-variance-authority";
 import { cn } from "@/src/utils/cn";
-// State changes only in user event handlers; no focus registration effects.
 const TabsContext = React.createContext(null);
 function useTabs() {
   const context = React.useContext(TabsContext);
