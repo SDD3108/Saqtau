@@ -28,7 +28,7 @@ export default function AppSection({ c, setLightbox }) {
         <Tabs defaultValue="0" className="product-tabs">
           <TabsList>
             {c.tabs.map((tab, i) => (
-              <TabsTrigger value={String(i)} key={tab}>
+              <TabsTrigger value={String(i)} key={i}>
                 {
                   [
                     <ScanFace key="s" />,

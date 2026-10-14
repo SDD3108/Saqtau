@@ -1,5 +1,6 @@
 "use client";
 import { ArrowUpRight, ArrowRight, Smartphone } from "lucide-react";
+import { useSiteStore } from "@/src/store/DemoStore/demoStore";
 import useCountdown, { launchAt } from "@/src/hooks/useCountdown";
 export default function Countdown({ c }) {
   const now = useCountdown();
@@ -33,7 +34,17 @@ export default function Countdown({ c }) {
         <div className="countdown">
           {values.map((n, i) => (
             <div className="count-unit" key={i}>
-              <span className="count-number">{n}</span>
+              <span className="count-number" aria-label={n}>
+                {Array.from(n).map((digit, index) => (
+                  <span
+                    className="count-digit"
+                    aria-hidden="true"
+                    key={`${index}-${digit}`}
+                  >
+                    {digit}
+                  </span>
+                ))}
+              </span>
               <span className="count-label">{c.units[i]}</span>
             </div>
           ))}

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import SignalField from "../../SignalField/SignalField";
 import { ArrowUpRight, ArrowRight, Activity, ShieldCheck } from "lucide-react";
 import { Button } from "@/src/ui/button";
 import { useSiteStore } from "@/src/store/DemoStore/demoStore";
@@ -35,6 +36,7 @@ export default function HeroSection({ c }) {
         </p>
       </div>
       <div className="hero-visual">
+        <SignalField />
         <div className="orbit orbit-one" />
         <div className="orbit orbit-two" />
         <span className="visual-cross cross-one">+</span>

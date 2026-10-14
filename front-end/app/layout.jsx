@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./style/motion.css";
 export const metadata = {
   title: "SaqtauAI — Ближе к себе. Ближе к здоровью.",
   description:
