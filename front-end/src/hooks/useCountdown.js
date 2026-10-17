@@ -1,6 +1,6 @@
 "use client";
 import { useSyncExternalStore } from "react";
-export const launchAt = Date.parse("2026-10-20T14:00:00+05:00");
+export const launchAt = Date.parse("2026-11-20T14:00:00+05:00");
 function subscribe(cb) {
   const id = setInterval(cb, 1000);
   return () => clearInterval(id);
