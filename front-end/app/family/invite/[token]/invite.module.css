@@ -1,0 +1,8 @@
+.page { min-height:100svh; display:grid; place-items:center; padding:24px; background:#f2eff5; color:#20192b; font-family:system-ui,sans-serif }
+.card { width:min(100%,440px); box-sizing:border-box; background:white; border-radius:28px; padding:clamp(22px,5vw,42px) }
+.brand { display:flex; align-items:center; gap:12px; font-size:20px; font-weight:700 }
+.card h1 { margin:38px 0 12px; font-size:clamp(29px,5vw,38px); line-height:1.1; letter-spacing:-.04em }
+.card p { font-size:16px; line-height:1.55; color:#625a6c; margin-bottom:24px }
+.card a { display:block; text-align:center; padding:14px; border-radius:16px; font-weight:650; text-decoration:none; margin-top:10px }
+.primary { background:#21172d; color:white }.secondary { background:#f2eff6; color:#32263f }
+.card .hint { font-size:13px; margin:20px 0 0 }

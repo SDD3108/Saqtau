@@ -1,0 +1,10 @@
+{
+    "applinks":{
+        "details":[
+            {
+                "appIDs":["5QZMMBZ7R7.com.sd3108.Saqtau-AI"],
+                "components":[{"/":"/family/invite/*"}]
+            }
+        ]
+    }
+}
