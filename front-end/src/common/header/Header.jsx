@@ -5,7 +5,7 @@ import { ArrowUpRight, Menu } from "lucide-react";
 import { Button } from "@/src/ui/button";
 import { useSiteStore } from "@/src/store/DemoStore/demoStore";
 import Logo from "@/src/components/Logo/Logo";
-const navIds = ["technology", "app", "progress", "team"];
+const navIds = ["technology", "app", "progress", "team", "contact"];
 function subscribeScroll(cb) {
   window.addEventListener("scroll", cb, { passive: true });
   return () => window.removeEventListener("scroll", cb);
@@ -42,7 +42,7 @@ export default function Header({ c, locale }) {
         {!compact && (
           <nav className="desktop-nav">
             {c.nav.map((n, i) => (
-              <a href={`#${navIds[i]}`} key={n}>
+              <a href={navIds[i] == "contact" ? "/support" : `#${navIds[i]}`} key={n}>
                 {n}
               </a>
             ))}
@@ -88,7 +88,7 @@ export default function Header({ c, locale }) {
         <nav className="mobile-nav">
           {c.nav.map((n, i) => (
             <a
-              href={`#${navIds[i]}`}
+              href={navIds[i] == "contact" ? "/support" : `#${navIds[i]}`}
               key={n}
               onClick={() => setMobileOpen(false)}
             >

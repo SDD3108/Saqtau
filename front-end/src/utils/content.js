@@ -1,6 +1,6 @@
 export const copy = {
   ru: {
-    nav: ["Технология", "Приложение", "Развитие", "Команда"],
+    nav: ["Технология", "Приложение", "Развитие", "Команда","Поддержка"],
     demo: "Запросить демо",
     eyebrow: "HEALTHTECH · СОЗДАНО В АСТАНЕ",
     hero: ["Ближе к себе.", "Ближе к здоровью."],
@@ -193,7 +193,7 @@ export const copy = {
     ],
   },
   en: {
-    nav: ["Technology", "The app", "Our progress", "Team"],
+    nav: ["Technology", "The app", "Our progress", "Team","Support"],
     demo: "Request a demo",
     eyebrow: "HEALTHTECH · BUILT IN ASTANA",
     hero: ["Closer to yourself.", "Closer to wellbeing."],
@@ -377,7 +377,7 @@ export const copy = {
     ],
   },
   kk: {
-    nav: ["Технология", "Қосымша", "Даму", "Команда"],
+    nav: ["Технология", "Қосымша", "Даму", "Команда","Қолдау"],
     demo: "Демо сұрату",
     eyebrow: "HEALTHTECH · АСТАНАДА ЖАСАЛҒАН",
     hero: ["Өзіңізге жақын.", "Саулыққа жақын."],

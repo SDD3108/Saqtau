@@ -1,11 +1,11 @@
 "use client";
+
 import { ArrowUpRight } from "lucide-react";
 import Logo from "@/src/components/Logo/Logo";
-import { useTranslation } from "react-i18next";
-import SupportForm from "@/src/feature/Support/SupportForm";
-const navIds = ["technology", "app", "progress", "team"];
+
+const navIds = ["technology", "app", "progress", "team", "contact"];
+
 export default function Footer({ c, onPrivacy }) {
-  const { i18n } = useTranslation();
   return (
     <footer className="wrap">
       <div className="footer-top">
@@ -13,15 +13,16 @@ export default function Footer({ c, onPrivacy }) {
           <Logo />
           <p>{c.footer}</p>
         </div>
+
         <nav>
-          {c.nav.map((n, i) => (
-            <a key={n} href={`#${navIds[i]}`}>
-              {n}
+          {c.nav.map((label, i) => (
+            <a key={navIds[i]} href={navIds[i] == "contact" ? "/support" : `#${navIds[i]}`}>
+              {label}
             </a>
           ))}
         </nav>
       </div>
-      <SupportForm locale={i18n.language} />
+
       <div className="footer-bottom">
         <span>
           © 2026 SaqtauAI ·{" "}
@@ -33,8 +34,10 @@ export default function Footer({ c, onPrivacy }) {
             Instagram ↗
           </a>
         </span>
+
         <span>Astana, Kazakhstan · {c.footerNote}</span>
-        <button onClick={() => onPrivacy()}>
+
+        <button type="button" onClick={onPrivacy}>
           {c.privacy}
           <ArrowUpRight size={14} />
         </button>
