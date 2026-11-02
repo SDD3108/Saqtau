@@ -128,10 +128,10 @@ function Content() {
             {c.privacyText}
             <br />
             <a
-              href="mailto:almacapsula@gmail.com"
+              href="mailto:satimovdamir6@gmail.com"
               className="text-primary underline"
             >
-              almacapsula@gmail.com
+              satimovdamir6@gmail.com
             </a>
           </DialogDescription>
 
