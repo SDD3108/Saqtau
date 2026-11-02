@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const email = "satimovdamir6@gmail.com";
+const email = "saqtauai@gmail.com";
 
 const languages = {
   ru: "Русский",

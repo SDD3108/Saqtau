@@ -2,7 +2,7 @@
 
 import { useId, useRef, useState } from "react";
 
-const contact = "satimovdamir6@gmail.com";
+const contact = "saqtauai@gmail.com";
 const wordsIn = (s) => s.match(/\S+/gu)?.length ?? 0;
 const copy = {
   ru: {
