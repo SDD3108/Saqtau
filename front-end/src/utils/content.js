@@ -11,7 +11,7 @@ export const copy = {
     scan: "Камера считывает сигнал",
     scanSub: "Небольшой check-in. Большая забота.",
     launch: "ДО ЗАПУСКА ПРИЛОЖЕНИЯ",
-    launchDate: "20 октября 2026 · 14:00, Астана",
+    launchDate: "20 ноября 2026 · 14:00, Астана",
     units: ["дней", "часов", "минут", "секунд"],
     released: "Запланированная дата запуска наступила",
     releasedSub: "Узнайте у команды о доступности приложения.",
@@ -145,7 +145,7 @@ export const copy = {
       ],
       [
         "Когда появится приложение?",
-        "Плановая дата запуска — 20 октября 2026 года в 14:00 по Астане (UTC+5). Доступность в App Store и Google Play зависит от прохождения проверок магазинов.",
+        "Плановая дата запуска — 20 ноября 2026 года в 14:00 по Астане (UTC+5). Доступность в App Store и Google Play зависит от прохождения проверок магазинов.",
       ],
       [
         "Как получить демо?",
@@ -204,7 +204,7 @@ export const copy = {
     scan: "Reading your signal",
     scanSub: "A small check-in. A little more care.",
     launch: "THE COUNTDOWN TO LAUNCH",
-    launchDate: "20 October 2026 · 14:00, Astana",
+    launchDate: "20 November 2026 · 14:00, Astana",
     units: ["days", "hours", "minutes", "seconds"],
     released: "The planned launch date has arrived",
     releasedSub: "Ask our team about app availability.",
@@ -330,7 +330,7 @@ export const copy = {
       ],
       [
         "When is the app launching?",
-        "Our planned launch is 20 October 2026 at 14:00 Astana time (UTC+5). App Store and Google Play availability is subject to store review.",
+        "Our planned launch is 20 November 2026 at 14:00 Astana time (UTC+5). App Store and Google Play availability is subject to store review.",
       ],
       [
         "How can I get a demo?",
@@ -388,7 +388,7 @@ export const copy = {
     scan: "Сигнал оқылуда",
     scanSub: "Шағын check-in. Үлкен қамқорлық.",
     launch: "ҚОСЫМШАНЫҢ ІСКЕ ҚОСЫЛУЫНА ДЕЙІН",
-    launchDate: "20 қазан 2026 · 14:00, Астана",
+    launchDate: "20 Қараша 2026 · 14:00, Астана",
     units: ["күн", "сағат", "минут", "секунд"],
     released: "Жоспарланған іске қосу күні келді",
     releasedSub: "Қосымшаның қолжетімділігін командадан біліңіз.",
@@ -516,7 +516,7 @@ export const copy = {
       ],
       [
         "Қосымша қашан шығады?",
-        "Жоспарланған күн — 2026 жылғы 20 қазан, Астана уақытымен 14:00 (UTC+5). App Store мен Google Play-дегі қолжетімділік дүкен тексеруіне байланысты.",
+        "Жоспарланған күн — 2026 жылғы 20 Қараша, Астана уақытымен 14:00 (UTC+5). App Store мен Google Play-дегі қолжетімділік дүкен тексеруіне байланысты.",
       ],
       [
         "Демоны қалай алуға болады?",

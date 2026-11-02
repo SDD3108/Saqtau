@@ -1,8 +1,10 @@
 import express from "express";
 import { createDemoRoutes } from "./routes/demoRoutes.js";
+import { supportRoutes } from "./routes/supportRoutes.js";
 export function createApp(options) {
   const app = express();
   app.disable("x-powered-by");
+  app.use("/api/support", supportRoutes(options));
   app.use(express.json({ limit: "4kb" }));
   app.get("/api/health", (_req, res) => res.json({ ok: true }));
   app.use("/api/demo", createDemoRoutes(options));

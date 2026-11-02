@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const email = "satimovdamir6@gmail.com";
+import SupportForm from "@/src/feature/Support/SupportForm";
 
 const languages = {
   ru: "Русский",
@@ -88,17 +88,7 @@ export default async function SupportPage({ searchParams }) {
       </div>
 
       <h1 className="mt-16 text-4xl font-semibold">{t.title}</h1>
-      <p className="mt-5 leading-relaxed">{t.intro}</p>
-
-      <div className="my-8 rounded-2xl border border-border bg-card p-6">
-        <p className="mb-2 text-sm text-muted-foreground">{t.label}</p>
-        <a
-          href={`mailto:${email}?subject=Saqtau%20AI%20Support`}
-          className="break-all text-xl font-semibold text-primary underline"
-        >
-          {email}
-        </a>
-      </div>
+      <SupportForm locale={lang} />
 
       <h2 className="text-xl font-semibold">{t.help}</h2>
       <p className="mt-3 leading-relaxed">{t.tip}</p>

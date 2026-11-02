@@ -1,8 +1,11 @@
 "use client";
 import { ArrowUpRight } from "lucide-react";
 import Logo from "@/src/components/Logo/Logo";
+import { useTranslation } from "react-i18next";
+import SupportForm from "@/src/feature/Support/SupportForm";
 const navIds = ["technology", "app", "progress", "team"];
 export default function Footer({ c, onPrivacy }) {
+  const { i18n } = useTranslation();
   return (
     <footer className="wrap">
       <div className="footer-top">
@@ -18,6 +21,7 @@ export default function Footer({ c, onPrivacy }) {
           ))}
         </nav>
       </div>
+      <SupportForm locale={i18n.language} />
       <div className="footer-bottom">
         <span>
           © 2026 SaqtauAI ·{" "}
