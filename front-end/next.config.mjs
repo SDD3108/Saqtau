@@ -7,6 +7,11 @@ const nextConfig = {
         { key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" },
         { key: "Cache-Control", value: "private, no-store" },
       ] },
+      { source: "/auth/reset-password/:path*", headers: [
+        { key: "Referrer-Policy", value: "no-referrer" },
+        { key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" },
+        { key: "Cache-Control", value: "private, no-store" },
+      ] },
     ];
   },
   async rewrites() {
