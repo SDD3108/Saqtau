@@ -1,5 +1,6 @@
 "use client";
 
+import { privacyHref, privacyLabels, privacyLocale } from "@/src/feature/Privacy/links";
 import { useId, useRef, useState } from "react";
 
 const contact = "saqtauai@gmail.com";
@@ -78,6 +79,10 @@ export default function SupportForm({ locale = "ru" }) {
         <p id={id + "-count"} className={over ? "text-sm text-red-400" : "text-sm text-muted-foreground"}>
           {words} / 600 {t.words}{over ? " · " + t.long : ""}
         </p>
+        <a href={privacyHref(locale)} target="_blank" rel="noopener noreferrer"
+          className="w-fit text-sm text-primary underline underline-offset-4">
+          {privacyLabels[privacyLocale(locale)]}
+        </a>
         <button type="submit" disabled={!words || over || busy}
           className="w-fit rounded-xl bg-primary px-5 py-2 font-semibold text-primary-foreground disabled:opacity-50">
           {busy ? t.busy : t.send}

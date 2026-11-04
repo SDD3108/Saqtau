@@ -1,6 +1,6 @@
 import { headers } from 'next/headers';
-import ResetPasswordForm from '@/src/features/password-reset/ResetPasswordForm';
-import { resolveLanguage } from '@/src/features/password-reset/copy';
+import ResetPasswordForm from '@/src/feature/password-reset/ResetPasswordForm';
+import { resolveLanguage } from '@/src/feature/password-reset/copy';
 
 export const dynamic = 'force-dynamic';
 export const metadata = {

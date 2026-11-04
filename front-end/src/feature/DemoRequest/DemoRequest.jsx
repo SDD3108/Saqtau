@@ -1,4 +1,5 @@
 "use client";
+import { privacyHref } from "@/src/feature/Privacy/links";
 import { useState } from "react";
 import {
   ArrowUpRight,
@@ -129,6 +130,10 @@ export default function DemoForm({ c, locale }) {
               />
               <span>{c.consent}</span>
             </label>
+            <a href={privacyHref(locale)} target="_blank" rel="noopener noreferrer"
+              className="text-sm text-primary underline underline-offset-4">
+              {c.privacy}
+            </a>
             {error && (
               <p role="alert" className="form-error">
                 {error}

@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { useTranslation, I18nextProvider } from "react-i18next";
 
 import useSiteMotion from "@/src/hooks/useSiteMotion";
-import { Button } from "@/src/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -43,7 +42,6 @@ function Content() {
 
   const c = copy[locale];
 
-  const [privacy, setPrivacy] = useState(false);
   const [lightbox, setLightbox] = useState(null);
 
   useEffect(() => {
@@ -116,30 +114,9 @@ function Content() {
         <FinalCtaSection c={c} />
       </main>
 
-      <Footer c={c} onPrivacy={() => setPrivacy(true)} />
+      <Footer c={c} locale={locale} />
 
       <DemoForm c={c} locale={locale} />
-
-      <Dialog open={privacy} onOpenChange={setPrivacy}>
-        <DialogContent className="demo-dialog">
-          <DialogTitle>{c.privacy}</DialogTitle>
-
-          <DialogDescription className="privacy-text">
-            {c.privacyText}
-            <br />
-            <a
-              href="mailto:saqtauai@gmail.com"
-              className="text-primary underline"
-            >
-              SaqtauAI@gmail.com
-            </a>
-          </DialogDescription>
-
-          <Button variant="outline" onClick={() => setPrivacy(false)}>
-            {c.close}
-          </Button>
-        </DialogContent>
-      </Dialog>
 
       <Dialog
         open={lightbox !== null}
